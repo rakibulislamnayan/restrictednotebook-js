@@ -1,6 +1,8 @@
 # 📓 R. Note
 
-A privacy-first encrypted notebook built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies, no backend, no accounts.
+**R. Note**, also known as **Restricted Notebook**, is a privacy-first encrypted notebook built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies, no backend, no accounts.
+
+Notebooks are encrypted and saved in a custom **.rna (Restricted Notebook Access) format**: a portable file that stays unreadable to anyone without the correct password.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-brightgreen?style=for-the-badge)](https://rakibulislamnayan.github.io/restrictednotebook-js)
 [![GitHub](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github)](https://github.com/rakibulislamnayan/restrictednotebook-js)
@@ -9,18 +11,19 @@ A privacy-first encrypted notebook built with vanilla HTML, CSS, and JavaScript.
 
 ## ✨ Features
 
+
 | Feature | Details |
 |---|---|
 | Zero server, zero account | Fully client-side. Nothing is ever uploaded anywhere |
 | AES-256 encryption | Real Web Crypto API encryption, no custom algorithm |
 | PBKDF2 key derivation | 250,000 iterations to resist brute-force attacks on a leaked file |
-| Custom .rna file format | Encrypted notebooks download as a portable `.rna` file |
+| Custom .rna file format | Encrypted notebooks download as a portable `.rna` (Restricted Notebook Access) file |
 | Hidden signature verification | Detects wrong passwords and corrupted files without storing the password |
 | Notebook-style editor | Cream paper, ruled lines, red margin, spiral binding |
 | Dark mode | Full nighttime writing theme, remembers your preference |
 | Live stats | Word count, character count, estimated reading time |
 | Panic Lock | Instantly wipes visible content and returns home |
-| Drag & drop upload | Or browse to select a `.rna` file |
+| Drag & drop upload | Or browse to select a `.rna` (Restricted Notebook Access) file |
 | Fully offline capable | Works without internet after the first load |
 | Accessible | Keyboard navigation, focus indicators, ARIA labels |
 
@@ -44,7 +47,7 @@ Below is the full list of screenshots used in this README, in the order they app
 | `screenshot-password.png` | Close-up of the password field with Show/Hide toggle, before clicking Encrypt |
 | `screenshot-encrypt-success.png` | The success status message after clicking Encrypt & Download RNA |
 | `screenshot-upload-dropzone.png` | The Upload screen showing the empty drag and drop area |
-| `screenshot-upload-loaded.png` | The Upload screen after a `.rna` file has been dropped in, showing the filename and password field |
+| `screenshot-upload-loaded.png` | The Upload screen after a `.rna` (Restricted Notebook Access) file has been dropped in, showing the filename and password field |
 | `screenshot-unlock-wrong.png` | The error message shown after entering an incorrect password |
 | `screenshot-unlock-success.png` | The unlocked notebook view, showing the restored title and content |
 | `screenshot-panic-lock.png` | The Panic Lock button, ideally captured mid-flash or just before clicking |
@@ -99,8 +102,8 @@ Light mode and dark mode, side by side in spirit, both built on the same noteboo
 1. Click **New Notebook** to start writing, or **Upload RNA File** to open an existing one
 2. Write your notes in the notebook style editor
 3. Enter a password and click **Encrypt & Download RNA**
-4. The notebook downloads as a `.rna` file: unreadable to anyone without the password
-5. To reopen it later, upload the same `.rna` file and enter the correct password
+4. The notebook downloads as a `.rna` (Restricted Notebook Access) file: unreadable to anyone without the password
+5. To reopen it later, upload the same `.rna` (Restricted Notebook Access) file and enter the correct password
 6. Use **Panic Lock** anytime to instantly clear the screen and return home
 
 ***
@@ -109,7 +112,7 @@ Light mode and dark mode, side by side in spirit, both built on the same noteboo
 
 ### File format
 
-Each `.rna` file is a JSON envelope containing:
+Each `.rna` (Restricted Notebook Access) file is a JSON envelope containing:
 
 ```json
 {

@@ -70,7 +70,7 @@
     <div class="editor-topbar">
       <button class="btn-back" id="backFromNew" aria-label="Back to home">&larr; Home</button>
       <h2 class="editor-screen-title" id="new-title">New Notebook</h2>
-      <button class="btn-panic" id="panicLockNew" title="Instantly clear and exit">Panic Lock</button>
+      <span class="editor-topbar-spacer" aria-hidden="true"></span>
     </div>
 
     <div class="notebook-stage">
@@ -115,6 +115,7 @@
           <span class="btn-icon" aria-hidden="true">🔒</span> Encrypt &amp; Download RNA
         </button>
         <button class="btn btn-ghost btn-block" id="btnClearNew">Clear Notebook</button>
+        <button class="btn-panic btn-block" id="panicLockNew" title="Instantly clear and exit">Panic Lock</button>
 
         <div class="status-line" id="encryptStatus" role="status" aria-live="polite"></div>
       </aside>
@@ -158,7 +159,7 @@
     <div class="editor-topbar">
       <button class="btn-back" id="backFromView" aria-label="Back to home">&larr; Home</button>
       <h2 class="editor-screen-title" id="view-title">Notebook</h2>
-      <button class="btn-panic" id="panicLockView" title="Instantly clear and exit">Panic Lock</button>
+      <span class="editor-topbar-spacer" aria-hidden="true"></span>
     </div>
 
     <div class="notebook-stage">
@@ -195,6 +196,7 @@
         <button class="btn btn-primary btn-block" id="btnReEncrypt">
           <span class="btn-icon" aria-hidden="true">🔒</span> Save Changes &amp; Re-download
         </button>
+        <button class="btn-panic btn-block" id="panicLockView" title="Instantly clear and exit">Panic Lock</button>
 
         <div class="status-line" id="reEncryptStatus" role="status" aria-live="polite"></div>
       </aside>
